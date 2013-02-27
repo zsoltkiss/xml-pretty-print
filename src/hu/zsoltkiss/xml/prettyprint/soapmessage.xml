@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:ser="http://services.krue.nisz.hu/"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+		<wsa:Action>http://services.krue.nisz.hu/BEDSZ/uploadDocument
+		</wsa:Action>
+		<wsa:ReplyTo>
+			<wsa:Address>Qwerty</wsa:Address>
+		</wsa:ReplyTo>
+		<wsa:From>
+			<wsa:Address>Zsolesz</wsa:Address>
+		</wsa:From>
+		<wsa:To>Asdf</wsa:To>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ser:uploadDocument>
+			<!--Optional: -->
+			<document>asdf.txt</document>
+		</ser:uploadDocument>
+	</soapenv:Body>
+</soapenv:Envelope>
